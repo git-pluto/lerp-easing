@@ -5,9 +5,9 @@ func _process(delta: float) -> void:
 	var a = lerp(0, 1,eas.call((g.t()-timestart)/duration))-lerp(0, 1,eas.call((g.t()-delta-timestart)/duration))
 	
 	match property:
-		"scale":
+		propers.scale:
 			obj.scale += a*end
-		"position":
+		propers.position:
 			obj.position += a*end
 	if g.t()-timestart >= duration:
 		if len(queue):

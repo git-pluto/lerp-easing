@@ -8,13 +8,16 @@ var end
 var eas
 var property
 var queue:Array[Array] = []
+enum propers {
+	position, scale, rotation
+}
 
 func _process(delta: float) -> void:
 	var a = lerp(float(1), float(end),eas.call((g.t()-timestart)/duration))/lerp(float(1), float(end),eas.call((g.t()-delta-timestart)/duration))
 	match property:
-		"scale":
+		propers.scale:
 			obj.scale *= a
-		"position":
+		propers.position:
 			obj.position *= a
 	if g.t()-timestart >= duration:
 		if len(queue):
@@ -30,7 +33,13 @@ func add(xObj, xProperty, xEnd, xEase, xDuration):
 
 func setup(arr: Array):
 	obj = arr[0]
-	property = arr[1]
+	match arr[1]:
+		"position":
+			property = propers.position
+		"rotation":
+			property = propers.rotation
+		"scale": 
+			property = propers.scale
 	end = arr[2]
 	eas = arr[3]
 	duration = arr[4]
