@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 g="*res://global_timer.tscn"
 calc="*res://calc.gd"
+sc="*res://space_calc.gd"
 
 [editor]
 
