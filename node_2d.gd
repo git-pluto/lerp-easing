@@ -11,6 +11,5 @@ func _process(_delta: float) -> void:
 
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("ui_up"):
-		icon.scale+=Vector2(0,2)
 		var a:lerp_ease = calc.setLerp("add")
-		a.add(icon,"scale",Vector2(0,-2),calc.co, 0.5)
+		a.add(icon,"rotation_degrees",90,calc.tco, 0.5)

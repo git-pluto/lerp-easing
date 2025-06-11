@@ -19,6 +19,8 @@ func _process(delta: float) -> void:
 			obj.scale *= a
 		propers.position:
 			obj.position *= a
+		propers.rotation:
+			obj.rotation *= a
 	if g.t()-timestart >= duration:
 		if len(queue):
 			setup(queue.pop_front())
@@ -40,6 +42,11 @@ func setup(arr: Array):
 			property = propers.rotation
 		"scale": 
 			property = propers.scale
+		"rotation_degrees":
+			property = propers.rotation
+			arr[2]*=PI/180
+		_:
+			print("invalid property")
 	end = arr[2]
 	eas = arr[3]
 	duration = arr[4]
