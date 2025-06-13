@@ -10,9 +10,11 @@ func translate(obj, move: Vector3):
 	var start: Vector3 = obj.pos
 	obj.pos+= move
 	
-	obj.position += Vector2(obj.pos.x-1.1**-obj.pos.z,obj.pos.y*1.1**-obj.pos.z)-Vector2(start.x-1.1**-start.z,start.y*1.1**-start.z)
+	obj.position += Vector2(move.x,move.y)*2000/(((obj.pos.x**2+obj.pos.y**2+obj.pos.z**2)**0.5)+((start.x**2+start.y**2+start.z**2)**0.5))
+	#Vector2(obj.pos.x-1.1**-obj.pos.z,obj.pos.y*1.1**-obj.pos.z)-Vector2(start.x-1.1**-start.z,start.y*1.1**-start.z)
 	
-	obj.scale *= Vector2(1,1)*(scale(obj.pos.z)/scale(start.z))
+	obj.scale *= Vector2(1,1)*(start.x**2+start.y**2+start.z**2)**0.5/(obj.pos.x**2+obj.pos.y**2+obj.pos.z**2)**0.5
+	
 	# the position is still the same but the scale keeps increasing
 	#icon.position.y += pos.y*sc.ypos(distance) + pos.y*sc.ypos(distance-move) # calculo + offset. esse é um tipo de funcao definitiva
 	#icon.position.x += -(pos.x*sc.ypos(distance) + pos.x*sc.ypos(distance-move))
