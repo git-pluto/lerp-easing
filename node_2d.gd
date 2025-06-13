@@ -13,7 +13,7 @@ func _init() -> void:
 
 func _process(_delta: float) -> void:
 	pass
-	sc.translate(icon, move*5)
+	sc.translate(icon, move*50)
 
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("up"):
