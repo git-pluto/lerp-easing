@@ -9,11 +9,9 @@ func _init() -> void:
 	await self.ready
 	sc.translate(icon,Vector3(0,0,0))
 
-
-
 func _process(_delta: float) -> void:
 	pass
-	sc.translate(icon, move*50)
+	sc.translate(icon, move)
 
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("up"):

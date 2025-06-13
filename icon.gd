@@ -1,3 +1,3 @@
 extends Sprite2D
 
-var pos = Vector3(0,0,1000)
+var pos = Vector3(0,0,10)
