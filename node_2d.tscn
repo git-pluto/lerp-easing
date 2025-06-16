@@ -8,8 +8,15 @@
 script = ExtResource("1_0en3q")
 
 [node name="Icon" type="Sprite2D" parent="."]
+clip_children = 2
 texture = ExtResource("2_0g6bq")
 script = ExtResource("3_th70q")
+
+[node name="ColorRect" type="ColorRect" parent="Icon"]
+offset_left = -65.0
+offset_top = -66.0
+offset_right = 68.0
+offset_bottom = 66.0
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(0, 20)

@@ -9,7 +9,7 @@ var eas
 var property
 var queue:Array[Array] = []
 enum propers {
-	position, scale, rotation, translation
+	position, scale, rotation
 }
 
 func _process(delta: float) -> void:
@@ -45,8 +45,6 @@ func setup(arr: Array):
 		"rotation_degrees":
 			property = propers.rotation
 			arr[2]*=PI/180
-		"translation":
-			property = propers.translation
 		_:
 			print("invalid property")
 	end = arr[2]

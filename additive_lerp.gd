@@ -15,8 +15,6 @@ func _process(delta: float) -> void:
 				obj.rotation_degrees += 360
 			elif obj.rotation_degrees > 360:
 				obj.rotation_degrees -= 360
-		propers.translation:
-			sc.translate(obj,a*end)
 	if g.t()-timestart >= duration:
 		if len(queue):
 			setup(queue.pop_front())

@@ -2,6 +2,7 @@ extends Node
 
 const AdditiveLerp = preload("res://additive_lerp.gd")
 const IterativeLerp = preload("res://iterative_lerp.gd")
+const SpaceLerp = preload("res://space_lerp.gd")
 
 func setLerp(type: String):
 	var a = Node.new()
@@ -10,6 +11,8 @@ func setLerp(type: String):
 			a.set_script(IterativeLerp)
 		"add":
 			a.set_script(AdditiveLerp)
+		"spc":
+			a.set_script(SpaceLerp)
 	add_child(a)
 	return a
 
