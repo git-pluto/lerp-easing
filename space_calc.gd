@@ -1,10 +1,13 @@
 extends Node
 
-func distance(obj):
-	return (((obj.pos.x/10)**2+(obj.pos.y/10)**2+(obj.pos.z/10)**2)**0.5)
+func distance(coords):
+	return (((coords.x/10)**2+(coords.y/10)**2+(coords.z/10)**2)**0.5)
 
 func translate(obj, move: Vector3):
+	var start = obj.pos
 	obj.pos+= move
-	obj.position = 100*Vector2(obj.pos.x,obj.pos.y)/distance(obj)
-	obj.scale = 10*Vector2(1,1)/distance(obj)
-	obj.white.modulate.a = (distance(obj)/70)**1.6
+	
+	obj.position += 100*Vector2(obj.pos.x,obj.pos.y)/distance(obj.pos) - 100*Vector2(start.x,start.y)/distance(start)
+	obj.scale *= (10*Vector2(1,1)/distance(obj.pos))/(10*Vector2(1,1)/distance(start))
+	obj.white.modulate.a = (distance(obj.pos)/60)**1.6
+	

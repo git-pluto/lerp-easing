@@ -1,6 +1,6 @@
 extends Node2D
 
-@onready var icon: Sprite2D = $Icon
+@onready var icon: Node2D = $Icon
 
 var move = Vector3(0,0,0)
 
@@ -16,11 +16,14 @@ func _process(_delta: float) -> void:
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("up"):
 		var a:space_lerp = calc.setLerp("spc")
-		a.add(icon,Vector3(0,-5,0),calc.jump,0.5)
-		a.add(icon,Vector3(0,-5,0),calc.jump,0.5)
+		a.add(icon,Vector3(0,-5,0),calc.jump,0.2)
+		a.add(icon,Vector3(0,0,0),calc.jump,0.1)
+		a.add(icon,Vector3(0,-2,0),calc.jump,1)
+		
 		var b:space_lerp = calc.setLerp("spc")
-		b.add(icon,Vector3(20,0,20),calc.hio,0.5)
-		b.add(icon,Vector3(-20,0,-20),calc.hio,0.5)
+		b.add(icon,Vector3(20,0,20),calc.sqi,0.2)
+		b.add(icon,Vector3(0,-1,0),calc.jump,0.1)
+		b.add(icon,Vector3(-20,0,-20),calc.hio,1)
 		#move.y = -1
 	#if event.is_action_pressed("down"):
 		#move.y = 1

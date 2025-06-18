@@ -10,7 +10,6 @@ var queue:Array[Array] = []
 
 func _process(delta: float) -> void:
 	var a = lerp(0, 1,eas.call((g.t()-timestart)/duration))-lerp(0, 1,eas.call((g.t()-delta-timestart)/duration))
-	
 	sc.translate(obj,a*end)
 	
 	if g.t()-timestart >= duration:
