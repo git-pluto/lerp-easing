@@ -9,5 +9,6 @@ func translate(obj, move: Vector3):
 	
 	obj.position += 100*Vector2(obj.pos.x,obj.pos.y)/distance(obj.pos) - 100*Vector2(start.x,start.y)/distance(start)
 	obj.scale *= (10*Vector2(1,1)/distance(obj.pos))/(10*Vector2(1,1)/distance(start))
-	obj.white.modulate.a = (distance(obj.pos)/60)**1.6
+	print(obj.scale)
+	#obj.white.modulate.a = (distance(obj.pos)/60)**1.6
 	
