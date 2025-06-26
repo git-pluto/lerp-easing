@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c3d4xmitvlgt4"
-path="res://.godot/imported/decorator crab.png-a1ee8451cff51f147afdc49b9f430c76.ctex"
+uid="uid://cwl68tg1smq0e"
+path="res://.godot/imported/firefly.png-82ce18787a665c8cc66446b3136a553a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://decorator crab.png"
-dest_files=["res://.godot/imported/decorator crab.png-a1ee8451cff51f147afdc49b9f430c76.ctex"]
+source_file="res://sprites/firefly.png"
+dest_files=["res://.godot/imported/firefly.png-82ce18787a665c8cc66446b3136a553a.ctex"]
 
 [params]
 

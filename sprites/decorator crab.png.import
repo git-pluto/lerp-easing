@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b1cposxpn6jys"
-path="res://.godot/imported/nautilus.png-18911b62661a86fd5327768c7578eebe.ctex"
+uid="uid://c3d4xmitvlgt4"
+path="res://.godot/imported/decorator crab.png-adfe1dda24a279e164713fc24e15c853.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://nautilus.png"
-dest_files=["res://.godot/imported/nautilus.png-18911b62661a86fd5327768c7578eebe.ctex"]
+source_file="res://sprites/decorator crab.png"
+dest_files=["res://.godot/imported/decorator crab.png-adfe1dda24a279e164713fc24e15c853.ctex"]
 
 [params]
 

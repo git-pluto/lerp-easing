@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bywchuvlj04iy"
-path="res://.godot/imported/cheerleader crab.png-df3728fdb9080a3347077b767b86b58d.ctex"
+uid="uid://b1cposxpn6jys"
+path="res://.godot/imported/nautilus.png-4cc0269e46f7b3e38de66329b8afc682.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://cheerleader crab.png"
-dest_files=["res://.godot/imported/cheerleader crab.png-df3728fdb9080a3347077b767b86b58d.ctex"]
+source_file="res://sprites/nautilus.png"
+dest_files=["res://.godot/imported/nautilus.png-4cc0269e46f7b3e38de66329b8afc682.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bfbps6mgm7ca4"
-path="res://.godot/imported/bullfrog.png-38ad815aaa104726f500b5e5ad6432be.ctex"
+path="res://.godot/imported/bullfrog.png-7a8908ae8b43b9d35f4a05f26b501e81.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://bullfrog.png"
-dest_files=["res://.godot/imported/bullfrog.png-38ad815aaa104726f500b5e5ad6432be.ctex"]
+source_file="res://sprites/bullfrog.png"
+dest_files=["res://.godot/imported/bullfrog.png-7a8908ae8b43b9d35f4a05f26b501e81.ctex"]
 
 [params]
 

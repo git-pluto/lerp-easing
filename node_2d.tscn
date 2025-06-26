@@ -1,13 +1,13 @@
 [gd_scene load_steps=9 format=3 uid="uid://07qmmqpxcimq"]
 
 [ext_resource type="Script" uid="uid://vly12l25b6kw" path="res://node_2d.gd" id="1_0en3q"]
-[ext_resource type="Texture2D" uid="uid://bfbps6mgm7ca4" path="res://bullfrog.png" id="2_rj586"]
+[ext_resource type="Texture2D" uid="uid://bfbps6mgm7ca4" path="res://sprites/bullfrog.png" id="2_rj586"]
 [ext_resource type="Script" uid="uid://1u3y52fxy15f" path="res://icon.gd" id="3_th70q"]
-[ext_resource type="Texture2D" uid="uid://cwl68tg1smq0e" path="res://firefly.png" id="4_0hol4"]
-[ext_resource type="Texture2D" uid="uid://ovwti2xamaa4" path="res://silverfish.png" id="5_4d7sh"]
-[ext_resource type="Texture2D" uid="uid://c4cq3av7n1kg6" path="res://spider tailed horned viper.png" id="6_ir8iy"]
-[ext_resource type="Texture2D" uid="uid://b1cposxpn6jys" path="res://nautilus.png" id="7_hqns4"]
-[ext_resource type="Texture2D" uid="uid://c3d4xmitvlgt4" path="res://decorator crab.png" id="8_x0ka3"]
+[ext_resource type="Texture2D" uid="uid://cwl68tg1smq0e" path="res://sprites/firefly.png" id="4_0hol4"]
+[ext_resource type="Texture2D" uid="uid://ovwti2xamaa4" path="res://sprites/silverfish.png" id="5_4d7sh"]
+[ext_resource type="Texture2D" uid="uid://c4cq3av7n1kg6" path="res://sprites/spider tailed horned viper.png" id="6_ir8iy"]
+[ext_resource type="Texture2D" uid="uid://b1cposxpn6jys" path="res://sprites/nautilus.png" id="7_hqns4"]
+[ext_resource type="Texture2D" uid="uid://c3d4xmitvlgt4" path="res://sprites/decorator crab.png" id="8_x0ka3"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_0en3q")
@@ -25,17 +25,12 @@ script = ExtResource("3_th70q")
 
 [node name="Sprite2D" type="Sprite2D" parent="Icon"]
 clip_children = 2
-scale = Vector2(-3, 3)
+position = Vector2(11.4253, -8.06495)
+scale = Vector2(-4.54478, 4.60179)
 texture = ExtResource("4_0hol4")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(0, 20)
-
-[node name="ColorRect" type="ColorRect" parent="."]
-offset_left = -0.130783
-offset_top = -126.84
-offset_right = 93.8692
-offset_bottom = -55.8403
 
 [node name="Silverfish" type="Sprite2D" parent="."]
 position = Vector2(399, -75)

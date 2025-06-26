@@ -1,8 +1,8 @@
 extends Node
 
-const AdditiveLerp = preload("res://additive_lerp.gd")
-const IterativeLerp = preload("res://iterative_lerp.gd")
-const SpaceLerp = preload("res://space_lerp.gd")
+const AdditiveLerp = preload("res://fake tweening stuff/additive_lerp.gd")
+const IterativeLerp = preload("res://fake tweening stuff/iterative_lerp.gd")
+const SpaceLerp = preload("res://fake 3d stuff/space_lerp.gd")
 
 func setLerp(type: String):
 	var a = Node.new()

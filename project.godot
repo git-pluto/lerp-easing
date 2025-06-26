@@ -13,13 +13,13 @@ config_version=5
 config/name="lerp trying"
 run/main_scene="res://node_2d.tscn"
 config/features=PackedStringArray("4.4", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://sprites/icon.svg"
 
 [autoload]
 
-g="*res://global_timer.tscn"
-calc="*res://calc.gd"
-sc="*res://space_calc.gd"
+g="*res://fake tweening stuff/global_timer.tscn"
+calc="*res://fake tweening stuff/calc.gd"
+sc="*res://fake 3d stuff/space_calc.gd"
 
 [editor]
 
