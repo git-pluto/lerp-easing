@@ -1,20 +1,20 @@
-[gd_scene load_steps=9 format=3 uid="uid://07qmmqpxcimq"]
+[gd_scene load_steps=6 format=3 uid="uid://07qmmqpxcimq"]
 
 [ext_resource type="Script" uid="uid://vly12l25b6kw" path="res://node_2d.gd" id="1_0en3q"]
 [ext_resource type="Texture2D" uid="uid://bfbps6mgm7ca4" path="res://sprites/bullfrog.png" id="2_rj586"]
 [ext_resource type="Script" uid="uid://1u3y52fxy15f" path="res://icon.gd" id="3_th70q"]
 [ext_resource type="Texture2D" uid="uid://cwl68tg1smq0e" path="res://sprites/firefly.png" id="4_0hol4"]
-[ext_resource type="Texture2D" uid="uid://ovwti2xamaa4" path="res://sprites/silverfish.png" id="5_4d7sh"]
-[ext_resource type="Texture2D" uid="uid://c4cq3av7n1kg6" path="res://sprites/spider tailed horned viper.png" id="6_ir8iy"]
-[ext_resource type="Texture2D" uid="uid://b1cposxpn6jys" path="res://sprites/nautilus.png" id="7_hqns4"]
-[ext_resource type="Texture2D" uid="uid://c3d4xmitvlgt4" path="res://sprites/decorator crab.png" id="8_x0ka3"]
+[ext_resource type="Script" uid="uid://cwx2njb852arg" path="res://camera_2d.gd" id="5_ir8iy"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_0en3q")
 
-[node name="AfricanBullfrog" type="Sprite2D" parent="."]
+[node name="frog" type="Node2D" parent="."]
 position = Vector2(184, 13)
 scale = Vector2(3, 3)
+script = ExtResource("3_th70q")
+
+[node name="AfricanBullfrog" type="Sprite2D" parent="frog"]
 texture = ExtResource("2_rj586")
 
 [node name="Icon" type="Node2D" parent="."]
@@ -31,19 +31,4 @@ texture = ExtResource("4_0hol4")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(0, 20)
-
-[node name="Silverfish" type="Sprite2D" parent="."]
-position = Vector2(399, -75)
-texture = ExtResource("5_4d7sh")
-
-[node name="SpiderTailedHornedViper" type="Sprite2D" parent="."]
-position = Vector2(309, -79)
-texture = ExtResource("6_ir8iy")
-
-[node name="Nautilus" type="Sprite2D" parent="."]
-position = Vector2(206, -82)
-texture = ExtResource("7_hqns4")
-
-[node name="DecoratorCrab" type="Sprite2D" parent="."]
-position = Vector2(96, -77)
-texture = ExtResource("8_x0ka3")
+script = ExtResource("5_ir8iy")

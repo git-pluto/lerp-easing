@@ -1,4 +1,4 @@
 extends Node2D
 
-var pos = Vector3(-10,0,50)
+var pos = Vector3(0,0,0)
 #@onready var white: ColorRect = $Sprite2D/ColorRect
