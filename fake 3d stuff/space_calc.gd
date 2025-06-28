@@ -15,13 +15,16 @@ func translate(obj, move: Vector3):
 	#obj.white.modulate.a = (distance(obj.pos)/60)**1.6
 
 func orbit(obj, angle: Vector2):
-	var start = obj.pos
-	var anguloinicial = atan2(start.z,start.x)
-	var H = hipot(start.z,start.x)
+	var anguloinicial = atan2(obj.pos.z,obj.pos.x)
+	var H = hipot(obj.pos.z,obj.pos.x)
 	
 	translate(obj, Vector3(cos(anguloinicial-angle.x)*H-cos(anguloinicial)*H,0,sin(anguloinicial-angle.x)*H-sin(anguloinicial)*H))
 	
 	print(distance(obj.pos))
+	
+	H = hipot(obj.pos.z,obj.pos.y)
+	anguloinicial = atan2(obj.pos.z,obj.pos.y)
+	
 	translate(obj, Vector3(0,cos(anguloinicial-angle.y)*H-cos(anguloinicial)*H,sin(anguloinicial-angle.y)*H-sin(anguloinicial)*H))
 
 func hipot(a, b):

@@ -20,7 +20,7 @@ func _process(_delta: float) -> void:
 	pass
 	#sc.translate(icon, move)
 	#sc.translate(frog, move)
-	sc.orbit(icon,Vector2(1,0))
+	sc.orbit(icon,Vector2(0.1,0.1))
 
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("up"):
