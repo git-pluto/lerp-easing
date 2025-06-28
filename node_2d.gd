@@ -1,5 +1,4 @@
 extends Node2D
-# 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
 
 var stuff = [icon, frog]
 
@@ -19,9 +18,9 @@ func _init() -> void:
 
 func _process(_delta: float) -> void:
 	pass
-	sc.translate(icon, move)
-	sc.translate(frog, move)
-	sc.orbit(icon,Vector2(0.001,0.001))
+	#sc.translate(icon, move)
+	#sc.translate(frog, move)
+	sc.orbit(icon,Vector2(1,0))
 
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("up"):
