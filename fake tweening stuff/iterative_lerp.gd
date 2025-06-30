@@ -12,6 +12,9 @@ enum propers {
 	position, scale, rotation
 }
 
+signal step
+signal finish
+
 func _process(delta: float) -> void:
 	var a = lerp(float(1), float(end),eas.call((g.t()-timestart)/duration))/lerp(float(1), float(end),eas.call((g.t()-delta-timestart)/duration))
 	match property:
@@ -21,10 +24,15 @@ func _process(delta: float) -> void:
 			obj.position *= a
 		propers.rotation:
 			obj.rotation *= a
+	reading()
+
+func reading():
 	if g.t()-timestart >= duration:
 		if len(queue):
 			setup(queue.pop_front())
+			step.emit()
 		else:
+			finish.emit()
 			queue_free()
 
 func add(xObj, xProperty, xEnd, xEase, xDuration):
