@@ -1,33 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://07qmmqpxcimq"]
+[gd_scene load_steps=3 format=3 uid="uid://07qmmqpxcimq"]
 
 [ext_resource type="Script" uid="uid://vly12l25b6kw" path="res://node_2d.gd" id="1_0en3q"]
-[ext_resource type="Texture2D" uid="uid://bfbps6mgm7ca4" path="res://sprites/bullfrog.png" id="2_rj586"]
-[ext_resource type="Script" uid="uid://1u3y52fxy15f" path="res://icon.gd" id="3_th70q"]
-[ext_resource type="Texture2D" uid="uid://cwl68tg1smq0e" path="res://sprites/firefly.png" id="4_0hol4"]
 [ext_resource type="Script" uid="uid://cwx2njb852arg" path="res://camera_2d.gd" id="5_ir8iy"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_0en3q")
-
-[node name="frog" type="Node2D" parent="."]
-position = Vector2(184, 13)
-scale = Vector2(3, 3)
-script = ExtResource("3_th70q")
-
-[node name="AfricanBullfrog" type="Sprite2D" parent="frog"]
-texture = ExtResource("2_rj586")
-
-[node name="Icon" type="Node2D" parent="."]
-clip_children = 2
-position = Vector2(-201, 16)
-scale = Vector2(1.48792, 1.48792)
-script = ExtResource("3_th70q")
-
-[node name="Sprite2D" type="Sprite2D" parent="Icon"]
-clip_children = 2
-position = Vector2(11.4253, -8.06495)
-scale = Vector2(-4.54478, 4.60179)
-texture = ExtResource("4_0hol4")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(0, 20)
